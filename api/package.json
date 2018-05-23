@@ -1,0 +1,21 @@
+{
+  "name": "campus-api",
+  "version": "1.0.0",
+  "description": "Server Backend RESTFUL to serve campus app",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongodb": "^3.1.0-beta4",
+    "mongoose": "^5.1.2",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo 'Not Created'"
+  },
+  "keywords": [],
+  "author": "Victor Caetano",
+  "license": "MIT"
+}
