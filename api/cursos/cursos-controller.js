@@ -1,3 +1,4 @@
+const Curso = require('./cursos-model');
 
 exports.findAll = (req, res, next) => {
   res.status(201).send('Requisição recebida com sucesso!');
@@ -9,6 +10,8 @@ exports.findById = (req, res, next) => {
 };
 
 exports.add = (req, res, next) => {
+
+  var curso = new Curso();
 
   var curso = req.body;
   console.log(curso.name);

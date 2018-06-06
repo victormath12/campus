@@ -1,0 +1,42 @@
+<div class="pre-header"></div>
+<clr-header class="header-6 header">
+  <button class="header-hamburger-trigger" type="button"><span></span></button>
+  <div class="branding">
+    <a class="logo-and-title" routerlink="/" href="/">
+      <span class="clr-icon clarity-logo"></span>
+      <span class="title">Itaú Campus</span>
+    </a>
+  </div>
+  <div class="divider"></div>
+  <form class="search">
+    <label for="search_input">
+      <input id="search_input" type="text" placeholder="O que você quer aprender hoje?">
+    </label>
+  </form>
+  <div class="header-actions">
+    <div class="header-nav clr-nav-level-1">
+      <a class="nav-link" id="cursos-link" routerlink="/cursos" routerlinkactive="active" href="/cursos/"><span class="nav-text">Cursos</span></a>
+      <clr-dropdown>
+        <a clrDropdownTrigger class="nav-link" style="padding:0;"><span class="nav-text">Especialidades</span></a>
+        <clr-dropdown-menu *clrIfOpen clrPosition="bottom-right">
+          <a clrDropdownItem>Java</a>
+          <a clrDropdownItem>Angular</a>
+          <a clrDropdownItem>NodeJS</a>
+        </clr-dropdown-menu>
+      </clr-dropdown>   
+      <a class="nav-link" routerlink="/icons" routerlinkactive="active" href="/clarity/icons"><span class="nav-text">Torne-se um Instrutor</span></a>
+    </div>
+    <clr-dropdown>
+      <button class="nav-icon" clrDropdownTrigger>
+        <clr-icon shape="user"></clr-icon>
+        <clr-icon shape="caret down"></clr-icon>
+      </button>
+      <clr-dropdown-menu *clrIfOpen clrPosition="bottom-right">
+        <a clrDropdownItem>Meu Perfil</a>
+        <a clrDropdownItem>Preferências</a>
+        <a clrDropdownItem>Log out</a>
+      </clr-dropdown-menu>
+    </clr-dropdown>
+  </div>
+  <button class="header-overflow-trigger" type="button"><span></span></button>
+</clr-header>

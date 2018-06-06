@@ -22,9 +22,11 @@ mongoose.connect(dbConfig.url).then(() => {
   process.exit();
 });
 
+
 // Path Routing Declaration
 cursos = require('./cursos/cursos-router');
 app.use('/cursos', cursos);
+
 
 // Server Listen
 app.listen(8080, () => {

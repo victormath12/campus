@@ -1,0 +1,60 @@
+<app-page-title label="Expanda seus conhecimentos com os cursos"></app-page-title>
+<main>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Programação Reativa</h2>
+    </div>
+    <div *ngFor="let curso of cursos" class="col-md-2 col-sm-12 col-xs-12">
+      <a href="{{ curso.link }}" style="text-decoration: none;color:inherit;">
+       <div class="card clickable">
+        <div class="card-img">
+          <img src="{{ curso.imagem }}">
+        </div>
+        <div class="card-block">
+          <h4 class="card-title">{{ curso.nome }}</h4>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"> {{ curso.instrutor }} </li>
+          <li class="list-group-item">
+            <clr-icon shape="star" class="is-solid"></clr-icon>
+            <clr-icon shape="star" class="is-solid"></clr-icon>
+            <clr-icon shape="star" class="is-solid"></clr-icon>
+            <clr-icon shape="half-star" class="is-solid"></clr-icon>
+            <clr-icon shape="star"></clr-icon> 
+          </li>
+        </ul>
+      </div>
+     </a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Programação Reativa</h2>
+    </div>
+    <div *ngFor="let curso of cursos" class="col-md-2 col-sm-12 col-xs-12">
+      <a href="{{ curso.link }}" style="text-decoration: none;color:inherit;">
+        <div class="card clickable">
+        <div class="card-img">
+          <img src="{{ curso.imagem }}">
+        </div>
+        <div class="card-block">
+          <h4 class="card-title">{{ curso.nome }}</h4>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"> {{ curso.instrutor }} </li>
+          <li class="list-group-item">
+            <clr-icon shape="star" class="is-solid"></clr-icon>
+            <clr-icon shape="star" class="is-solid"></clr-icon>
+            <clr-icon shape="star" class="is-solid"></clr-icon>
+            <clr-icon shape="half-star" class="is-solid"></clr-icon>
+            <clr-icon shape="star"></clr-icon> 
+          </li>
+        </ul>
+      </div>
+      </a>
+    </div>
+  </div>
+
+</main>

@@ -26,11 +26,6 @@ var cursoSchema = mongoose.Schema({
       type: String
     }],
 
-    criador: {
-      type: Schema.ObjectId,
-      ref: 'Usuario'
-    },
-
     dataCriacao: {
       type: Date,
       default: Date.now

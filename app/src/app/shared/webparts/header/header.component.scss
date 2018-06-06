@@ -1,0 +1,11 @@
+.pre-header{
+  height: 0.3rem;
+  background: linear-gradient(to right,#ec7404 0,#ff9e11 100%);
+}
+
+clr-header form.search{
+  max-width: 40%;
+  width:  100%;
+  label{width: 100%;}
+  input{width: 100%;}
+}
