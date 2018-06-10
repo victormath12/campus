@@ -1,0 +1,51 @@
+.nav * {
+  box-sizing: border-box;
+}
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 10px;
+  padding: 0;
+}
+.nav a {
+  padding: 0.3em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.nav a:before,
+.nav a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.nav a:before {
+  top: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #30C9E9;
+}
+.nav a:after {
+  left: 0;
+  top: 0;
+  padding: 0.3em 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+.nav a:hover:before,
+.nav .current a:before {
+  opacity: 1;
+  width: 100%;
+}
+.nav a:hover:after,
+.nav .current a:after {
+  max-width: 100%;
+}
+

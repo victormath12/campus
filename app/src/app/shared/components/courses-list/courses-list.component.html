@@ -1,0 +1,24 @@
+<section *ngIf="title" class="course-list-title wrap container-fluid">
+  <div class="col-lg">
+    <h1 class="font-h1 font-light color-dark-gray">{{ title }}</h1>
+  </div>
+</section>
+<section class="course-list-container wrap container-fluid">
+  <div class="row">
+    <div *ngFor="let course of courses" class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+      <div class="card card-course">
+        <figure class="card-image">
+          <img src="{{ course.image }}" alt="Imagem do Curso: {{ course.name }}" />
+        </figure>
+        <section class="card-content">
+          <h5 class="card-subtitle">{{ course.category }}</h5>
+          <h3 class="card-title">{{ course.name }}</h3>
+          <footer class="card-footer font-align-center">
+            {{ course.instructor }}
+          </footer>
+        </section>
+        <a href="{{ course.link }}"></a>
+      </div>
+    </div>
+  </div>  
+</section>

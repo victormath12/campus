@@ -1,10 +1,10 @@
-body {
-  background: #EEE;
-}
+@import './assets/styles/reset.scss';
+@import './assets/styles/grid.scss';
+@import './assets/styles/colors.scss';
+@import './assets/styles/card.scss';
+@import './assets/styles/typography.scss';
 
-main {
-  width: 100%;
-  height: auto;
-  padding: 1rem;
-  background: #EEE;
+
+body{
+  background: $color-background;
 }
